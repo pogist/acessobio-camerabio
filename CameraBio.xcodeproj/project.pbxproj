@@ -8,16 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		16B32525228B61E300371FFB /* CameraBio.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B32523228B61E300371FFB /* CameraBio.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16B3252D228B627700371FFB /* TestCam.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B3252B228B627700371FFB /* TestCam.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16B3252E228B627700371FFB /* TestCam.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B3252C228B627700371FFB /* TestCam.m */; };
+		16B325D4228CB18300371FFB /* CameraBiometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325D0228CB18300371FFB /* CameraBiometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16B325D5228CB18400371FFB /* CameraBiometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B325D1228CB18300371FFB /* CameraBiometry.m */; };
+		16B325D6228CB18400371FFB /* FaceInsertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325D2228CB18300371FFB /* FaceInsertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16B325D7228CB18400371FFB /* FaceInsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B325D3228CB18300371FFB /* FaceInsertView.m */; };
+		16B325DD228CB1DC00371FFB /* UIImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B325D9228CB1DC00371FFB /* UIImageUtils.m */; };
+		16B325DE228CB1DC00371FFB /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B325DA228CB1DC00371FFB /* UIView+Toast.m */; };
+		16B325DF228CB1DC00371FFB /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325DB228CB1DC00371FFB /* UIView+Toast.h */; };
+		16B325E0228CB1DC00371FFB /* UIImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325DC228CB1DC00371FFB /* UIImageUtils.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16B32520228B61E300371FFB /* CameraBio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CameraBio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B32523228B61E300371FFB /* CameraBio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraBio.h; sourceTree = "<group>"; };
 		16B32524228B61E300371FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16B3252B228B627700371FFB /* TestCam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestCam.h; sourceTree = "<group>"; };
-		16B3252C228B627700371FFB /* TestCam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCam.m; sourceTree = "<group>"; };
+		16B325D0228CB18300371FFB /* CameraBiometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraBiometry.h; sourceTree = "<group>"; };
+		16B325D1228CB18300371FFB /* CameraBiometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraBiometry.m; sourceTree = "<group>"; };
+		16B325D2228CB18300371FFB /* FaceInsertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceInsertView.h; sourceTree = "<group>"; };
+		16B325D3228CB18300371FFB /* FaceInsertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceInsertView.m; sourceTree = "<group>"; };
+		16B325D9228CB1DC00371FFB /* UIImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageUtils.m; sourceTree = "<group>"; };
+		16B325DA228CB1DC00371FFB /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		16B325DB228CB1DC00371FFB /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		16B325DC228CB1DC00371FFB /* UIImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +62,26 @@
 		16B32522228B61E300371FFB /* CameraBio */ = {
 			isa = PBXGroup;
 			children = (
+				16B325D8228CB19D00371FFB /* Utils  */,
+				16B325D0228CB18300371FFB /* CameraBiometry.h */,
+				16B325D1228CB18300371FFB /* CameraBiometry.m */,
+				16B325D2228CB18300371FFB /* FaceInsertView.h */,
+				16B325D3228CB18300371FFB /* FaceInsertView.m */,
 				16B32523228B61E300371FFB /* CameraBio.h */,
 				16B32524228B61E300371FFB /* Info.plist */,
-				16B3252B228B627700371FFB /* TestCam.h */,
-				16B3252C228B627700371FFB /* TestCam.m */,
 			);
 			path = CameraBio;
+			sourceTree = "<group>";
+		};
+		16B325D8228CB19D00371FFB /* Utils  */ = {
+			isa = PBXGroup;
+			children = (
+				16B325DC228CB1DC00371FFB /* UIImageUtils.h */,
+				16B325D9228CB1DC00371FFB /* UIImageUtils.m */,
+				16B325DB228CB1DC00371FFB /* UIView+Toast.h */,
+				16B325DA228CB1DC00371FFB /* UIView+Toast.m */,
+			);
+			path = "Utils ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,8 +91,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16B3252D228B627700371FFB /* TestCam.h in Headers */,
+				16B325D4228CB18300371FFB /* CameraBiometry.h in Headers */,
+				16B325D6228CB18400371FFB /* FaceInsertView.h in Headers */,
 				16B32525228B61E300371FFB /* CameraBio.h in Headers */,
+				16B325E0228CB1DC00371FFB /* UIImageUtils.h in Headers */,
+				16B325DF228CB1DC00371FFB /* UIView+Toast.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16B3252E228B627700371FFB /* TestCam.m in Sources */,
+				16B325DE228CB1DC00371FFB /* UIView+Toast.m in Sources */,
+				16B325D5228CB18400371FFB /* CameraBiometry.m in Sources */,
+				16B325DD228CB1DC00371FFB /* UIImageUtils.m in Sources */,
+				16B325D7228CB18400371FFB /* FaceInsertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
