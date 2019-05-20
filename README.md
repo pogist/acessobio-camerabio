@@ -26,19 +26,23 @@ pod init
 
 ![](https://media.giphy.com/media/QCCiKSwfM8wuyYPaOI/giphy.gif)
 
-Um arquivo de Pods será criado em seu diretório, abra o mesmo e adicione:
+- Um arquivo Podfile será criado em seu diretório, abra o mesmo e adicione:
+
+![](https://media.giphy.com/media/SsgTAziSaHmH84BASS/giphy.gif)
 
 ```
 pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’, :tag => ‘0.0.3’
 ```
+![](https://media.giphy.com/media/eK6aukS7LdEOv0NFgC/giphy.gif)
 
 Em seguida: 
 
 ```
 pod install
 ```
+![](https://media.giphy.com/media/f7Z6XiHwXK1a7lq8VT/giphy.gif)
 
-Pronto! A nossa SDK já esta adicionada em seu projeto e pronta para uso. 
+Pronto! A nossa SDK já esta adicionada e pronta para uso. 
 
 ## Manuseio
 
@@ -50,7 +54,7 @@ Para importar, abrir e receber os callbacks básicos e muito simples, siga os pa
 
 ```
  CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];     
- [cam startCamera];
+ [cameraBio startCamera];
 ```
 
 Obter a imagem em base64:
@@ -72,26 +76,26 @@ Give an example
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
+## Construido com
 
 * [MLKit](https://firebase.google.com/docs/ml-kit/?hl=pt-br) - Framework Google para reconhecimento facial
 
-## Contributing
+## Contribuição
 
 Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
+## Versionamento
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-## Authors
+## Autores
 
 * **Matheus Domingos** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 * **Rafael Martins** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+Veja também nossa lista de [contribuidores](https://github.com/your/project/contributors) que participaram deste projeto.
 
-## License
+## Licensa
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
