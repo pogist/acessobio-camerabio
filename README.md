@@ -26,10 +26,12 @@ pod init
 
 ![](https://media.giphy.com/media/QCCiKSwfM8wuyYPaOI/giphy.gif)
 
-- Um arquivo Podfile será criado em seu diretório, abra o mesmo e adicione:
+- Um arquivo Podfile será criado em seu diretório.
 
 ![](https://media.giphy.com/media/SsgTAziSaHmH84BASS/giphy.gif)
 
+
+- Abra o mesmo e adicione:
 ```
 pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’, :tag => ‘0.0.3’
 ```
@@ -46,21 +48,28 @@ Pronto! A nossa SDK já esta adicionada e pronta para uso.
 
 ## Manuseio
 
-Para importar, abrir e receber os callbacks básicos e muito simples, siga os passos abaixo: 
+Importar, abrir a câmera e receber os callbacks básicos é muito simples, siga os passos abaixo:
+
+- Abra o seu arquivo *.h* que deseja abrir a camera de captura e importe importe e implemente nossa classe: 
 
 ```
 #import <CameraBio/CameraBiometry.h>
+
+@interface ViewController : UIViewController <CameraBioDelegate>
 ```
 
-```
- CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];     
- [cameraBio startCamera];
-```
-
-Obter a imagem em base64:
+- No arquivo *.m* instancie e chame a abertura de câmera:
 
 ```
- - (void)onSuccesCapture: (NSString*)base64;
+CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];     
+[cameraBio setDelegate:self];
+[cameraBio startCamera];
+```
+
+Para obter a imagem em base64:
+
+```
+- (void)onSuccesCapture: (NSString*)base64;
 ```
 
 ### Outros métodos uteis
@@ -80,22 +89,19 @@ Add additional notes about how to deploy this on a live system
 
 * [MLKit](https://firebase.google.com/docs/ml-kit/?hl=pt-br) - Framework Google para reconhecimento facial
 
-## Contribuição
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versionamento
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [Github](https://github.com/) para versionar. Para as versões disponíveis, veja as [tags do repositório](https://github.com/acesso-io/acessobio-camerabio/releases). 
 
 ## Autores
 
-* **Matheus Domingos** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Rafael Martins** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Matheus Domingos** - *Engenheiro iOS* - [GitHub](https://github.com/MatheusDomingos)
+* **Rafael Martins** - *Engenheiro Android* - [GitHub](https://github.com/rafaelmartinsdacosta)
 
 Veja também nossa lista de [contribuidores](https://github.com/your/project/contributors) que participaram deste projeto.
 
-## Licensa
+## Licença
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
