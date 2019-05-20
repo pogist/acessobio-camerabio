@@ -18,8 +18,6 @@
         viewController = view;
     }
     
-    
-    
     return self;
 }
 

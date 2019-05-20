@@ -49,7 +49,7 @@ float marginOfSides = 80.0f;
     
     countDown = 3;
     
-    [self setIsDebug:YES];
+   // [self setIsDebug:YES];
     
     [self setOffsetTopPercent:30.0f];
     [self setSizePercentBetweenTopAndBottom:20.0f];
@@ -306,9 +306,6 @@ float marginOfSides = 80.0f;
     self.view.userInteractionEnabled = TRUE;
 }
 
-- (void)setIsDebug : (BOOL)debug {
-    self.isDebug = debug;
-}
 
 - (void)setOffsetTopPercent : (float)percent {
     topOffsetPercent = percent/100 *  SCREEN_HEIGHT;

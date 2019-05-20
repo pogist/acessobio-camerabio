@@ -15,7 +15,6 @@
 
 @class CameraBio;
 //#import <BiometryFrameAcesso/FaceUtility.h>
-
 @import GoogleMobileVision;
 
 
