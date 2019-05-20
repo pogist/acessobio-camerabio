@@ -37,7 +37,7 @@ pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio
 ```
 ![](https://media.giphy.com/media/eK6aukS7LdEOv0NFgC/giphy.gif)
 
-Em seguida: 
+Em seguida, volte ao terminal e adicione a seguinte linha: 
 
 ```
 pod install
