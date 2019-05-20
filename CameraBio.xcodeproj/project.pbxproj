@@ -30,6 +30,7 @@
 		16B325DA228CB1DC00371FFB /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		16B325DB228CB1DC00371FFB /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		16B325DC228CB1DC00371FFB /* UIImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageUtils.h; sourceTree = "<group>"; };
+		16C212142292F17D005198C3 /* icon_take_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_take_pic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		16B32522228B61E300371FFB /* CameraBio */ = {
 			isa = PBXGroup;
 			children = (
+				16C212142292F17D005198C3 /* icon_take_pic.png */,
 				16B325D8228CB19D00371FFB /* Utils  */,
 				16B325D0228CB18300371FFB /* CameraBiometry.h */,
 				16B325D1228CB18300371FFB /* CameraBiometry.m */,
