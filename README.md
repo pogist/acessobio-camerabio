@@ -8,10 +8,10 @@ Estas instrucoes farao com que voce consiga implementar a camera com engenharia 
 
 ### Pré requisitos
 
-Xcode - IDE oficial de desenvolvimento Apple. - Versão 9 ou superior
-CocoaPods - Gerenciador de bibiotecas para IDE
+ - Xcode - IDE oficial de desenvolvimento Apple. Versão 9 ou superior
+ - CocoaPods - Gerenciador de bibiotecas para IDE
 
-Siga a documentação cocoa para instalar o gerenciador em sua maquina caso ainda a possua. 
+Siga a documentação [cocoapods](https://cocoapods.org/) para instalar o gerenciador em sua maquina caso ainda a possua. 
 
 ### Instalando
 
@@ -23,6 +23,8 @@ Recomendamos o uso do cocoapods para o desenvolvimento da aplicação.
 ```
 pod init 
 ```
+
+![](https://media.giphy.com/media/QCCiKSwfM8wuyYPaOI/giphy.gif)
 
 Um arquivo de Pods será criado em seu diretório, abra o mesmo e adicione:
 
