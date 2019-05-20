@@ -1,10 +1,10 @@
 # CameraBio
 
-Este projeto visa facilitar a integração do processo de captura biometrica via aplicativos iOS para os clientes Acesso. 
+Este projeto visa facilitar a integração do processo de captura biométrica via aplicativos iOS para os clientes Acesso. 
 
 ## Começando
 
-Estas instrucoes farao com que voce consiga implementar a camera com engenharia biométrica pré-existente e obter/manipular os dados de retorno.
+Estas instruções farão com que você consiga implementar a câmera com engenharia biométrica pré-existente e obter/manipular os dados de retorno.
 
 ### Pré requisitos
 
@@ -79,11 +79,6 @@ Explain what these tests test and why
 ```
 Give an example
 ```
-
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Construido com
 
