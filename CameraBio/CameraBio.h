@@ -15,7 +15,6 @@ FOUNDATION_EXPORT double CameraBioVersionNumber;
 FOUNDATION_EXPORT const unsigned char CameraBioVersionString[];
 
 #import <CameraBio/CameraBiometry.h>
-#import <CameraBio/FaceInsertView.h>
 
 
 // In this header, you should import all the public headers of your framework using statements like #import <CameraBio/PublicHeader.h>

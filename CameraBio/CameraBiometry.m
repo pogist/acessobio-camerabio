@@ -8,6 +8,7 @@
 
 #import "CameraBio.h"
 #import "FaceInsertView.h"
+#import "DocumentInsertView.h"
 
 @implementation CameraBio
 
@@ -18,13 +19,12 @@
         viewController = view;
     }
     
+    
     return self;
 }
 
 - (void)startCamera {
-    
     [self startCamera:NO];
-
 }
 
 - (void)startCamera: (BOOL)modeDebug {
@@ -35,37 +35,34 @@
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:fView];
     [nav setNavigationBarHidden:YES animated:NO];
     [viewController presentViewController:nav animated:YES completion:nil];
-
+    
 }
+
+
+- (void)startCameraDocuments : (DocumentType) documentType {
+    
+    dView = [DocumentInsertView new];
+    
+    if(documentType == DocumentCNH) {
+        dView.type = 0;
+    }else if(documentType == DocumentRGFrente) {
+        dView.type = 1;
+    }else{
+        dView.type = 2;
+    }
+    dView.cam = self;
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:dView];
+    [nav setNavigationBarHidden:YES animated:NO];
+    [viewController presentViewController:nav animated:YES completion:nil];
+    
+}
+
 
 - (void)onSuccesCapture: (NSString *)base64 {
     
     if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCapture:)]) {
         [self.delegate onSuccessCapture:base64];
     }
-
-}
-
-- (BOOL)cameraBioShouldAutoCapture {
-    
-    if (self.delegate && [self.delegate respondsToSelector:@selector(cameraBioShouldAutoCapture)]) {
-       [fView setIsAutoCapture:[self.delegate cameraBioShouldAutoCapture]];
-    }
- 
-    return fView.isAutoCapture;
     
 }
-
-- (BOOL)cameraBioShouldCountdow{
-    
-    if (self.delegate && [self.delegate respondsToSelector:@selector(cameraBioShouldCountdow)]) {
-        [fView setIsAutoCapture:[self.delegate cameraBioShouldCountdow]];
-    }
-    
-    return fView.isCountdown;
-
-}
-
-
-
 @end

@@ -9,7 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @class FaceInsertView;
+@class DocumentInsertView;
 
+
+typedef NS_ENUM(NSInteger, DocumentType) {
+    DocumentCNH,
+    DocumentRGFrente,
+    DocumentRGVerso
+};
 
 @protocol CameraBioDelegate <NSObject>
 
@@ -25,6 +32,7 @@
 @interface CameraBio : NSObject  <CameraBioDelegate>{
     UIViewController *viewController;
     FaceInsertView *fView;
+    DocumentInsertView *dView;
 }
 
 
@@ -32,6 +40,9 @@
 @property (assign, nonatomic) BOOL isDebug;
 
 - (void)startCamera;
+- (void)startCamera: (BOOL)modeDebug;
+- (void)startCameraDocuments : (DocumentType) documentType;
+
 - (id)initWithViewController:(id)view;
 - (void)onSuccesCapture: (NSString *)base64;
 
