@@ -1,17 +1,17 @@
 # CameraBio
 
-Este projeto visa facilitar a integração do processo de captura biometrica via aplicativos iOS para os clientes Acesso. 
+Este projeto visa facilitar a integração do processo de captura biométrica via aplicativos iOS para os clientes Acesso. 
 
 ## Começando
 
-Estas instrucoes farao com que voce consiga implementar a camera com engenharia biométrica pré-existente e obter/manipular os dados de retorno.
+Estas instruções farão com que você consiga implementar a câmera com engenharia biométrica pré-existente e obter/manipular os dados de retorno.
 
 ### Pré requisitos
 
-Xcode - IDE oficial de desenvolvimento Apple. - Versão 9 ou superior
-CocoaPods - Gerenciador de bibiotecas para IDE
+ - Xcode - IDE oficial de desenvolvimento Apple. Versão 9 ou superior
+ - CocoaPods - Gerenciador de bibiotecas para IDE
 
-Siga a documentação cocoa para instalar o gerenciador em sua maquina caso ainda a possua. 
+Siga a documentação [cocoapods](https://cocoapods.org/) para instalar o gerenciador em sua maquina caso ainda a possua. 
 
 ### Instalando
 
@@ -24,37 +24,52 @@ Recomendamos o uso do cocoapods para o desenvolvimento da aplicação.
 pod init 
 ```
 
-Um arquivo de Pods será criado em seu diretório, abra o mesmo e adicione:
+![](https://media.giphy.com/media/QCCiKSwfM8wuyYPaOI/giphy.gif)
 
+- Um arquivo Podfile será criado em seu diretório.
+
+![](https://media.giphy.com/media/SsgTAziSaHmH84BASS/giphy.gif)
+
+
+- Abra o mesmo e adicione:
 ```
 pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’, :tag => ‘0.0.3’
 ```
+![](https://media.giphy.com/media/eK6aukS7LdEOv0NFgC/giphy.gif)
 
-Em seguida: 
+Em seguida, volte ao terminal e adicione a seguinte linha: 
 
 ```
 pod install
 ```
+![](https://media.giphy.com/media/f7Z6XiHwXK1a7lq8VT/giphy.gif)
 
-Pronto! A nossa SDK já esta adicionada em seu projeto e pronta para uso. 
+Pronto! A nossa SDK já esta adicionada e pronta para uso. 
 
 ## Manuseio
 
-Para importar, abrir e receber os callbacks básicos e muito simples, siga os passos abaixo: 
+Importar, abrir a câmera e receber os callbacks básicos é muito simples, siga os passos abaixo:
+
+- Abra o seu arquivo *.h* que deseja abrir a camera de captura e importe importe e implemente nossa classe: 
 
 ```
 #import <CameraBio/CameraBiometry.h>
+
+@interface ViewController : UIViewController <CameraBioDelegate>
 ```
 
-```
- CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];     
- [cam startCamera];
-```
-
-Obter a imagem em base64:
+- No arquivo *.m* instancie e chame a abertura de câmera:
 
 ```
- - (void)onSuccesCapture: (NSString*)base64;
+CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];     
+[cameraBio setDelegate:self];
+[cameraBio startCamera];
+```
+
+Para obter a imagem em base64:
+
+```
+- (void)onSuccesCapture: (NSString*)base64;
 ```
 
 ### Outros métodos uteis
@@ -65,31 +80,23 @@ Explain what these tests test and why
 Give an example
 ```
 
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
+## Construido com
 
 * [MLKit](https://firebase.google.com/docs/ml-kit/?hl=pt-br) - Framework Google para reconhecimento facial
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+## Versionamento
 
-## Versioning
+We use [Github](https://github.com/) para versionar. Para as versões disponíveis, veja as [tags do repositório](https://github.com/acesso-io/acessobio-camerabio/releases). 
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+## Autores
 
-## Authors
+* **Matheus Domingos** - *Engenheiro iOS* - [GitHub](https://github.com/MatheusDomingos)
+* **Rafael Martins** - *Engenheiro Android* - [GitHub](https://github.com/rafaelmartinsdacosta)
 
-* **Matheus Domingos** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Rafael Martins** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+Veja também nossa lista de [contribuidores](https://github.com/your/project/contributors) que participaram deste projeto.
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
+## Licença
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
