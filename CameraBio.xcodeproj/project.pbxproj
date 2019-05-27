@@ -14,7 +14,6 @@
 		16B325DE228CB1DC00371FFB /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B325DA228CB1DC00371FFB /* UIView+Toast.m */; };
 		16B325DF228CB1DC00371FFB /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325DB228CB1DC00371FFB /* UIView+Toast.h */; };
 		16B325E0228CB1DC00371FFB /* UIImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325DC228CB1DC00371FFB /* UIImageUtils.h */; };
-		16F8D964229C651800DF6B4D /* FaceInsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D963229C651800DF6B4D /* FaceInsertView.m */; };
 		16F8D96B229C655300DF6B4D /* CameraFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D965229C655200DF6B4D /* CameraFrame.m */; };
 		16F8D96C229C655300DF6B4D /* CameraDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D96A229C655200DF6B4D /* CameraDebug.m */; };
 		16F8D96D229C655300DF6B4D /* CameraMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D967229C655200DF6B4D /* CameraMain.m */; };
@@ -23,6 +22,8 @@
 		16F8D976229C687400DF6B4D /* frame_cnh.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F8D973229C687200DF6B4D /* frame_cnh.png */; };
 		16F8D977229C687400DF6B4D /* frame_rg_verso.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F8D974229C687300DF6B4D /* frame_rg_verso.png */; };
 		16F8D978229C687400DF6B4D /* frame_rg_frente.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F8D975229C687300DF6B4D /* frame_rg_frente.png */; };
+		16F8D97B229C74A600DF6B4D /* FaceInsertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F8D979229C74A600DF6B4D /* FaceInsertView.h */; };
+		16F8D97C229C74A600DF6B4D /* FaceInsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D97A229C74A600DF6B4D /* FaceInsertView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +37,6 @@
 		16B325DB228CB1DC00371FFB /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		16B325DC228CB1DC00371FFB /* UIImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageUtils.h; sourceTree = "<group>"; };
 		16C212142292F17D005198C3 /* icon_take_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_take_pic.png; sourceTree = "<group>"; };
-		16F8D962229C651700DF6B4D /* FaceInsertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FaceInsertView.h; path = "../../crediario-ios/CaptureAcesso/View/FaceInsertView.h"; sourceTree = "<group>"; };
-		16F8D963229C651800DF6B4D /* FaceInsertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FaceInsertView.m; path = "../../crediario-ios/CaptureAcesso/View/FaceInsertView.m"; sourceTree = "<group>"; };
 		16F8D965229C655200DF6B4D /* CameraFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraFrame.m; sourceTree = "<group>"; };
 		16F8D966229C655200DF6B4D /* CameraMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraMain.h; sourceTree = "<group>"; };
 		16F8D967229C655200DF6B4D /* CameraMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraMain.m; sourceTree = "<group>"; };
@@ -50,6 +49,8 @@
 		16F8D973229C687200DF6B4D /* frame_cnh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_cnh.png; sourceTree = "<group>"; };
 		16F8D974229C687300DF6B4D /* frame_rg_verso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_rg_verso.png; sourceTree = "<group>"; };
 		16F8D975229C687300DF6B4D /* frame_rg_frente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_rg_frente.png; sourceTree = "<group>"; };
+		16F8D979229C74A600DF6B4D /* FaceInsertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceInsertView.h; sourceTree = "<group>"; };
+		16F8D97A229C74A600DF6B4D /* FaceInsertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceInsertView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,8 @@
 		16B32522228B61E300371FFB /* CameraBio */ = {
 			isa = PBXGroup;
 			children = (
+				16F8D979229C74A600DF6B4D /* FaceInsertView.h */,
+				16F8D97A229C74A600DF6B4D /* FaceInsertView.m */,
 				16F8D973229C687200DF6B4D /* frame_cnh.png */,
 				16F8D975229C687300DF6B4D /* frame_rg_frente.png */,
 				16F8D974229C687300DF6B4D /* frame_rg_verso.png */,
@@ -89,8 +92,6 @@
 				16B325D8228CB19D00371FFB /* Utils  */,
 				16B325D0228CB18300371FFB /* CameraBiometry.h */,
 				16B325D1228CB18300371FFB /* CameraBiometry.m */,
-				16F8D962229C651700DF6B4D /* FaceInsertView.h */,
-				16F8D963229C651800DF6B4D /* FaceInsertView.m */,
 				16B32523228B61E300371FFB /* CameraBio.h */,
 				16F8D969229C655200DF6B4D /* CameraDebug.h */,
 				16F8D96A229C655200DF6B4D /* CameraDebug.m */,
@@ -125,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B325D4228CB18300371FFB /* CameraBiometry.h in Headers */,
+				16F8D97B229C74A600DF6B4D /* FaceInsertView.h in Headers */,
 				16B32525228B61E300371FFB /* CameraBio.h in Headers */,
 				16B325E0228CB1DC00371FFB /* UIImageUtils.h in Headers */,
 				16F8D972229C65F200DF6B4D /* CameraValueFixed.h in Headers */,
@@ -204,9 +206,9 @@
 			files = (
 				16F8D96B229C655300DF6B4D /* CameraFrame.m in Sources */,
 				16F8D96D229C655300DF6B4D /* CameraMain.m in Sources */,
+				16F8D97C229C74A600DF6B4D /* FaceInsertView.m in Sources */,
 				16B325DE228CB1DC00371FFB /* UIView+Toast.m in Sources */,
 				16B325D5228CB18400371FFB /* CameraBiometry.m in Sources */,
-				16F8D964229C651800DF6B4D /* FaceInsertView.m in Sources */,
 				16F8D96C229C655300DF6B4D /* CameraDebug.m in Sources */,
 				16F8D970229C65DF00DF6B4D /* UIColorBio.m in Sources */,
 				16B325DD228CB1DC00371FFB /* UIImageUtils.m in Sources */,
