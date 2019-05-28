@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16259BE6229DB04C002072C6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16259BE5229DB04C002072C6 /* Media.xcassets */; };
 		16B32525228B61E300371FFB /* CameraBio.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B32523228B61E300371FFB /* CameraBio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16B325D4228CB18300371FFB /* CameraBiometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325D0228CB18300371FFB /* CameraBiometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16B325D5228CB18400371FFB /* CameraBiometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B325D1228CB18300371FFB /* CameraBiometry.m */; };
@@ -19,20 +20,14 @@
 		16F8D96D229C655300DF6B4D /* CameraMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D967229C655200DF6B4D /* CameraMain.m */; };
 		16F8D970229C65DF00DF6B4D /* UIColorBio.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D96F229C65DF00DF6B4D /* UIColorBio.m */; };
 		16F8D972229C65F200DF6B4D /* CameraValueFixed.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F8D971229C65F100DF6B4D /* CameraValueFixed.h */; };
-		16F8D976229C687400DF6B4D /* frame_cnh.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F8D973229C687200DF6B4D /* frame_cnh.png */; };
-		16F8D977229C687400DF6B4D /* frame_rg_verso.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F8D974229C687300DF6B4D /* frame_rg_verso.png */; };
-		16F8D978229C687400DF6B4D /* frame_rg_frente.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F8D975229C687300DF6B4D /* frame_rg_frente.png */; };
 		16F8D97B229C74A600DF6B4D /* FaceInsertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F8D979229C74A600DF6B4D /* FaceInsertView.h */; };
 		16F8D97C229C74A600DF6B4D /* FaceInsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D97A229C74A600DF6B4D /* FaceInsertView.m */; };
 		16F8D97F229D72A900DF6B4D /* DocumentInsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D97D229D72A900DF6B4D /* DocumentInsertView.m */; };
 		16F8D980229D72AA00DF6B4D /* DocumentInsertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F8D97E229D72A900DF6B4D /* DocumentInsertView.h */; };
-		16F8D981229D7E2300DF6B4D /* frame_cnh.png in Headers */ = {isa = PBXBuildFile; fileRef = 16F8D973229C687200DF6B4D /* frame_cnh.png */; };
-		16F8D982229D7E2300DF6B4D /* frame_rg_frente.png in Headers */ = {isa = PBXBuildFile; fileRef = 16F8D975229C687300DF6B4D /* frame_rg_frente.png */; };
-		16F8D983229D7E2300DF6B4D /* frame_rg_verso.png in Headers */ = {isa = PBXBuildFile; fileRef = 16F8D974229C687300DF6B4D /* frame_rg_verso.png */; };
-		16F8D984229D7E2300DF6B4D /* icon_take_pic.png in Headers */ = {isa = PBXBuildFile; fileRef = 16C212142292F17D005198C3 /* icon_take_pic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16259BE5229DB04C002072C6 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		16B32520228B61E300371FFB /* CameraBio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CameraBio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B32523228B61E300371FFB /* CameraBio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraBio.h; sourceTree = "<group>"; };
 		16B32524228B61E300371FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,7 +37,6 @@
 		16B325DA228CB1DC00371FFB /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		16B325DB228CB1DC00371FFB /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
 		16B325DC228CB1DC00371FFB /* UIImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageUtils.h; sourceTree = "<group>"; };
-		16C212142292F17D005198C3 /* icon_take_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_take_pic.png; sourceTree = "<group>"; };
 		16F8D965229C655200DF6B4D /* CameraFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraFrame.m; sourceTree = "<group>"; };
 		16F8D966229C655200DF6B4D /* CameraMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraMain.h; sourceTree = "<group>"; };
 		16F8D967229C655200DF6B4D /* CameraMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraMain.m; sourceTree = "<group>"; };
@@ -52,9 +46,6 @@
 		16F8D96E229C65DF00DF6B4D /* UIColorBio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIColorBio.h; sourceTree = "<group>"; };
 		16F8D96F229C65DF00DF6B4D /* UIColorBio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIColorBio.m; sourceTree = "<group>"; };
 		16F8D971229C65F100DF6B4D /* CameraValueFixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraValueFixed.h; sourceTree = "<group>"; };
-		16F8D973229C687200DF6B4D /* frame_cnh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_cnh.png; sourceTree = "<group>"; };
-		16F8D974229C687300DF6B4D /* frame_rg_verso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_rg_verso.png; sourceTree = "<group>"; };
-		16F8D975229C687300DF6B4D /* frame_rg_frente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_rg_frente.png; sourceTree = "<group>"; };
 		16F8D979229C74A600DF6B4D /* FaceInsertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceInsertView.h; sourceTree = "<group>"; };
 		16F8D97A229C74A600DF6B4D /* FaceInsertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceInsertView.m; sourceTree = "<group>"; };
 		16F8D97D229D72A900DF6B4D /* DocumentInsertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentInsertView.m; sourceTree = "<group>"; };
@@ -95,10 +86,6 @@
 				16F8D97D229D72A900DF6B4D /* DocumentInsertView.m */,
 				16F8D979229C74A600DF6B4D /* FaceInsertView.h */,
 				16F8D97A229C74A600DF6B4D /* FaceInsertView.m */,
-				16F8D973229C687200DF6B4D /* frame_cnh.png */,
-				16F8D975229C687300DF6B4D /* frame_rg_frente.png */,
-				16F8D974229C687300DF6B4D /* frame_rg_verso.png */,
-				16C212142292F17D005198C3 /* icon_take_pic.png */,
 				16B325D8228CB19D00371FFB /* Utils  */,
 				16B325D0228CB18300371FFB /* CameraBiometry.h */,
 				16B325D1228CB18300371FFB /* CameraBiometry.m */,
@@ -111,6 +98,7 @@
 				16F8D967229C655200DF6B4D /* CameraMain.m */,
 				16F8D971229C65F100DF6B4D /* CameraValueFixed.h */,
 				16B32524228B61E300371FFB /* Info.plist */,
+				16259BE5229DB04C002072C6 /* Media.xcassets */,
 			);
 			path = CameraBio;
 			sourceTree = "<group>";
@@ -137,10 +125,6 @@
 			files = (
 				16B325D4228CB18300371FFB /* CameraBiometry.h in Headers */,
 				16F8D97B229C74A600DF6B4D /* FaceInsertView.h in Headers */,
-				16F8D981229D7E2300DF6B4D /* frame_cnh.png in Headers */,
-				16F8D982229D7E2300DF6B4D /* frame_rg_frente.png in Headers */,
-				16F8D983229D7E2300DF6B4D /* frame_rg_verso.png in Headers */,
-				16F8D984229D7E2300DF6B4D /* icon_take_pic.png in Headers */,
 				16B32525228B61E300371FFB /* CameraBio.h in Headers */,
 				16B325E0228CB1DC00371FFB /* UIImageUtils.h in Headers */,
 				16F8D972229C65F200DF6B4D /* CameraValueFixed.h in Headers */,
@@ -206,9 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16F8D977229C687400DF6B4D /* frame_rg_verso.png in Resources */,
-				16F8D976229C687400DF6B4D /* frame_cnh.png in Resources */,
-				16F8D978229C687400DF6B4D /* frame_rg_frente.png in Resources */,
+				16259BE6229DB04C002072C6 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
