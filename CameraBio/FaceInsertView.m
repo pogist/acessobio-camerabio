@@ -9,7 +9,6 @@
 
 #import "FaceInsertView.h"
 #import "CameraBio.h"
-#import "UserDefaults.h"
 
 @interface FaceInsertView ()
 
@@ -72,7 +71,7 @@
 - (void) setupCamera:(BOOL) isSelfie {
     [super setupCamera:isSelfie];
     
-    cameraFrame = [[CameraFrame alloc]initWithView:self button:self.btTakePic autoCapture:[UserDefaults getAutoCapture] contagem:[UserDefaults getContagem] view:self.view];
+    cameraFrame = [[CameraFrame alloc]initWithView:self button:self.btTakePic autoCapture:self.isAutoCapture contagem:self.isCountdown view:self.view];
 
 }
 
@@ -348,9 +347,6 @@
     
     if(self.cam != nil){
         [self.cam onSuccesCapture:base64];
-    }else  if(self.nView != nil) {
-        [self.nView setBase64:base64];
-        [self dismissViewControllerAnimated:YES completion:nil];
     }
     
 }

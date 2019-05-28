@@ -50,6 +50,7 @@
     }else{
         dView.type = 2;
     }
+    
     dView.cam = self;
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:dView];
     [nav setNavigationBarHidden:YES animated:NO];
@@ -65,4 +66,26 @@
     }
     
 }
+
+
+- (BOOL)cameraBioShouldAutoCapture {
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cameraBioShouldAutoCapture)]) {
+        [fView setIsAutoCapture:[self.delegate cameraBioShouldAutoCapture]];
+    }
+    
+    return fView.isAutoCapture;
+    
+}
+
+- (BOOL)cameraBioShouldCountdow{
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(cameraBioShouldCountdow)]) {
+        [fView setIsCountdown:[self.delegate cameraBioShouldCountdow]];
+    }
+    
+    return fView.isCountdown;
+    
+}
+
 @end

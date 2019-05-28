@@ -26,7 +26,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) NSString *proccessId;
 
 
+
+@property(assign, nonatomic) BOOL isAutoCapture;
+@property(assign, nonatomic) BOOL isCountdown;
+
 @property (strong, nonatomic) CameraBio *cam;
+
+
 
 @end
 

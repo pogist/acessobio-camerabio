@@ -24,6 +24,8 @@
 		16F8D978229C687400DF6B4D /* frame_rg_frente.png in Resources */ = {isa = PBXBuildFile; fileRef = 16F8D975229C687300DF6B4D /* frame_rg_frente.png */; };
 		16F8D97B229C74A600DF6B4D /* FaceInsertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F8D979229C74A600DF6B4D /* FaceInsertView.h */; };
 		16F8D97C229C74A600DF6B4D /* FaceInsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D97A229C74A600DF6B4D /* FaceInsertView.m */; };
+		16F8D97F229D72A900DF6B4D /* DocumentInsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D97D229D72A900DF6B4D /* DocumentInsertView.m */; };
+		16F8D980229D72AA00DF6B4D /* DocumentInsertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F8D97E229D72A900DF6B4D /* DocumentInsertView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		16F8D975229C687300DF6B4D /* frame_rg_frente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_rg_frente.png; sourceTree = "<group>"; };
 		16F8D979229C74A600DF6B4D /* FaceInsertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceInsertView.h; sourceTree = "<group>"; };
 		16F8D97A229C74A600DF6B4D /* FaceInsertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceInsertView.m; sourceTree = "<group>"; };
+		16F8D97D229D72A900DF6B4D /* DocumentInsertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentInsertView.m; sourceTree = "<group>"; };
+		16F8D97E229D72A900DF6B4D /* DocumentInsertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentInsertView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 		16B32522228B61E300371FFB /* CameraBio */ = {
 			isa = PBXGroup;
 			children = (
+				16F8D97E229D72A900DF6B4D /* DocumentInsertView.h */,
+				16F8D97D229D72A900DF6B4D /* DocumentInsertView.m */,
 				16F8D979229C74A600DF6B4D /* FaceInsertView.h */,
 				16F8D97A229C74A600DF6B4D /* FaceInsertView.m */,
 				16F8D973229C687200DF6B4D /* frame_cnh.png */,
@@ -130,6 +136,7 @@
 				16B32525228B61E300371FFB /* CameraBio.h in Headers */,
 				16B325E0228CB1DC00371FFB /* UIImageUtils.h in Headers */,
 				16F8D972229C65F200DF6B4D /* CameraValueFixed.h in Headers */,
+				16F8D980229D72AA00DF6B4D /* DocumentInsertView.h in Headers */,
 				16B325DF228CB1DC00371FFB /* UIView+Toast.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +217,7 @@
 				16B325DE228CB1DC00371FFB /* UIView+Toast.m in Sources */,
 				16B325D5228CB18400371FFB /* CameraBiometry.m in Sources */,
 				16F8D96C229C655300DF6B4D /* CameraDebug.m in Sources */,
+				16F8D97F229D72A900DF6B4D /* DocumentInsertView.m in Sources */,
 				16F8D970229C65DF00DF6B4D /* UIColorBio.m in Sources */,
 				16B325DD228CB1DC00371FFB /* UIImageUtils.m in Sources */,
 			);
