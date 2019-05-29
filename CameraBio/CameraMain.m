@@ -149,6 +149,10 @@
     [self.session stopRunning];
 }
 
+- (void)restartCamera {
+    [self startCamera];
+}
+
 
 - (void)setIsDebug : (BOOL)isDebug {
     self.debug = isDebug;

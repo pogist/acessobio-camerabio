@@ -88,6 +88,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void) startCamera;
 - (void) stopCamera;
 
+- (void) restartCamera;
+
 - (void)showAlert : (NSString *)alert;
 - (void)setIsDebug : (BOOL)isDebug;
 

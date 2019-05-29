@@ -43,6 +43,8 @@ typedef NS_ENUM(NSInteger, DocumentType) {
 - (void)startCamera: (BOOL)modeDebug;
 - (void)startCameraDocuments : (DocumentType) documentType;
 
+- (void)restartCamera;
+
 - (id)initWithViewController:(id)view;
 - (void)onSuccesCapture: (NSString *)base64;
 

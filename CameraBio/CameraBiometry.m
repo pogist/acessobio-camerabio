@@ -38,6 +38,14 @@
     
 }
 
+- (void)restartCamera {
+    if(fView != nil) {
+        [fView restartCamera];
+    }else{
+        [self startCamera];
+    }
+}
+
 
 - (void)startCameraDocuments : (DocumentType) documentType {
     
