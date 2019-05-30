@@ -104,7 +104,10 @@
 		16B32522228B61E300371FFB /* CameraBio */ = {
 			isa = PBXGroup;
 			children = (
-				16E08EE122A01A2D008F735F /* Resources */,
+				16259BEB229DBDF5002072C6 /* frame_cnh.png */,
+				16259BEA229DBDF5002072C6 /* frame_rg_frente.png */,
+				16259BEC229DBDF5002072C6 /* frame_rg_verso.png */,
+				16259BE9229DBDF4002072C6 /* icon_take_pic.png */,
 				16F8D97E229D72A900DF6B4D /* DocumentInsertView.h */,
 				16F8D97D229D72A900DF6B4D /* DocumentInsertView.m */,
 				16F8D979229C74A600DF6B4D /* FaceInsertView.h */,
@@ -136,18 +139,6 @@
 				16B325DA228CB1DC00371FFB /* UIView+Toast.m */,
 			);
 			path = "Utils ";
-			sourceTree = "<group>";
-		};
-		16E08EE122A01A2D008F735F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				16259BEB229DBDF5002072C6 /* frame_cnh.png */,
-				16259BEA229DBDF5002072C6 /* frame_rg_frente.png */,
-				16259BEC229DBDF5002072C6 /* frame_rg_verso.png */,
-				16259BE9229DBDF4002072C6 /* icon_take_pic.png */,
-			);
-			name = Resources;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
