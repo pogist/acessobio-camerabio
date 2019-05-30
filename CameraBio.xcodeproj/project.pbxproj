@@ -7,16 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16259BE6229DB04C002072C6 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16259BE5229DB04C002072C6 /* Media.xcassets */; };
-		16259BE7229DB5EA002072C6 /* Media.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 16259BE5229DB04C002072C6 /* Media.xcassets */; };
-		16259BED229DBDF5002072C6 /* icon_take_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 16259BE9229DBDF4002072C6 /* icon_take_pic.png */; };
-		16259BEE229DBDF5002072C6 /* frame_rg_frente.png in Resources */ = {isa = PBXBuildFile; fileRef = 16259BEA229DBDF5002072C6 /* frame_rg_frente.png */; };
-		16259BEF229DBDF5002072C6 /* frame_cnh.png in Resources */ = {isa = PBXBuildFile; fileRef = 16259BEB229DBDF5002072C6 /* frame_cnh.png */; };
-		16259BF0229DBDF5002072C6 /* frame_rg_verso.png in Resources */ = {isa = PBXBuildFile; fileRef = 16259BEC229DBDF5002072C6 /* frame_rg_verso.png */; };
-		16259BF1229DBE12002072C6 /* frame_cnh.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16259BEB229DBDF5002072C6 /* frame_cnh.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		16259BF2229DBE12002072C6 /* frame_rg_frente.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16259BEA229DBDF5002072C6 /* frame_rg_frente.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		16259BF3229DBE12002072C6 /* frame_rg_verso.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16259BEC229DBDF5002072C6 /* frame_rg_verso.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		16259BF4229DBE12002072C6 /* icon_take_pic.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16259BE9229DBDF4002072C6 /* icon_take_pic.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		16B32525228B61E300371FFB /* CameraBio.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B32523228B61E300371FFB /* CameraBio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16B325D4228CB18300371FFB /* CameraBiometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325D0228CB18300371FFB /* CameraBiometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16B325D5228CB18400371FFB /* CameraBiometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B325D1228CB18300371FFB /* CameraBiometry.m */; };
@@ -24,6 +14,10 @@
 		16B325DE228CB1DC00371FFB /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B325DA228CB1DC00371FFB /* UIView+Toast.m */; };
 		16B325DF228CB1DC00371FFB /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325DB228CB1DC00371FFB /* UIView+Toast.h */; };
 		16B325E0228CB1DC00371FFB /* UIImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325DC228CB1DC00371FFB /* UIImageUtils.h */; };
+		16E08EDD22A00B20008F735F /* frame_cnh.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16259BEB229DBDF5002072C6 /* frame_cnh.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		16E08EDE22A00B20008F735F /* frame_rg_frente.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16259BEA229DBDF5002072C6 /* frame_rg_frente.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		16E08EDF22A00B20008F735F /* frame_rg_verso.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16259BEC229DBDF5002072C6 /* frame_rg_verso.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		16E08EE022A00B20008F735F /* icon_take_pic.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16259BE9229DBDF4002072C6 /* icon_take_pic.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		16F8D96B229C655300DF6B4D /* CameraFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D965229C655200DF6B4D /* CameraFrame.m */; };
 		16F8D96C229C655300DF6B4D /* CameraDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D96A229C655200DF6B4D /* CameraDebug.m */; };
 		16F8D96D229C655300DF6B4D /* CameraMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D967229C655200DF6B4D /* CameraMain.m */; };
@@ -36,23 +30,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		16259BE8229DB60B002072C6 /* CopyFiles */ = {
+		16E08EDC22A00AF3008F735F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 10;
+			dstSubfolderSpec = 7;
 			files = (
-				16259BF1229DBE12002072C6 /* frame_cnh.png in CopyFiles */,
-				16259BF2229DBE12002072C6 /* frame_rg_frente.png in CopyFiles */,
-				16259BF3229DBE12002072C6 /* frame_rg_verso.png in CopyFiles */,
-				16259BF4229DBE12002072C6 /* icon_take_pic.png in CopyFiles */,
+				16E08EDD22A00B20008F735F /* frame_cnh.png in CopyFiles */,
+				16E08EDE22A00B20008F735F /* frame_rg_frente.png in CopyFiles */,
+				16E08EDF22A00B20008F735F /* frame_rg_verso.png in CopyFiles */,
+				16E08EE022A00B20008F735F /* icon_take_pic.png in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		16259BE5229DB04C002072C6 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		16259BE9229DBDF4002072C6 /* icon_take_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_take_pic.png; sourceTree = "<group>"; };
 		16259BEA229DBDF5002072C6 /* frame_rg_frente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_rg_frente.png; sourceTree = "<group>"; };
 		16259BEB229DBDF5002072C6 /* frame_cnh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_cnh.png; sourceTree = "<group>"; };
@@ -131,7 +124,6 @@
 				16F8D967229C655200DF6B4D /* CameraMain.m */,
 				16F8D971229C65F100DF6B4D /* CameraValueFixed.h */,
 				16B32524228B61E300371FFB /* Info.plist */,
-				16259BE5229DB04C002072C6 /* Media.xcassets */,
 			);
 			path = CameraBio;
 			sourceTree = "<group>";
@@ -176,8 +168,7 @@
 				16B3251B228B61E300371FFB /* Headers */,
 				16B3251C228B61E300371FFB /* Sources */,
 				16B3251D228B61E300371FFB /* Frameworks */,
-				16B3251E228B61E300371FFB /* Resources */,
-				16259BE8229DB60B002072C6 /* CopyFiles */,
+				16E08EDC22A00AF3008F735F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -219,27 +210,11 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		16B3251E228B61E300371FFB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				16259BED229DBDF5002072C6 /* icon_take_pic.png in Resources */,
-				16259BE6229DB04C002072C6 /* Media.xcassets in Resources */,
-				16259BEE229DBDF5002072C6 /* frame_rg_frente.png in Resources */,
-				16259BEF229DBDF5002072C6 /* frame_cnh.png in Resources */,
-				16259BF0229DBDF5002072C6 /* frame_rg_verso.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		16B3251C228B61E300371FFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16259BE7229DB5EA002072C6 /* Media.xcassets in Sources */,
 				16F8D96B229C655300DF6B4D /* CameraFrame.m in Sources */,
 				16F8D96D229C655300DF6B4D /* CameraMain.m in Sources */,
 				16F8D97C229C74A600DF6B4D /* FaceInsertView.m in Sources */,

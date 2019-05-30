@@ -66,7 +66,6 @@
     
 }
 
-
 - (void)onSuccesCapture: (NSString *)base64 {
     
     if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCapture:)]) {
@@ -74,7 +73,6 @@
     }
     
 }
-
 
 - (BOOL)cameraBioShouldAutoCapture {
     
