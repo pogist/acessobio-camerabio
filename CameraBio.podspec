@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CameraBio"
-  spec.version      = "1.1.2"
+  spec.version      = "1.1.4"
   spec.summary      = "A short description of CameraBio."
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/acesso-io/acessobio-camerabio.git", :tag => "1.1.2" }
+  spec.source       = { :git => "https://github.com/acesso-io/acessobio-camerabio.git", :tag => "1.1.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "CameraBio", "CameraBio/**/*.{h,m}", "CameraBio/*.png"
+  spec.source_files  = "CameraBio", "CameraBio/**/*.{h,m}", "CameraBio/*.{png}", "*.{png}"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -102,8 +102,8 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # spec.resource  = "icon.png"
-  # spec.resources = "CameraBio/CameraBio/*.png"
+   spec.resource  = "icon.png","CameraBio/CameraBio/*.{png}", "*.{png}", "CameraBio/*.{png}"
+   spec.resources = "CameraBio/CameraBio/*.{png}", "*.{png}", "CameraBio/*.{png}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
