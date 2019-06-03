@@ -46,17 +46,29 @@
     }
 }
 
+- (void)stopCamera {
+    if(fView == nil) {
+        [dView stopCamera];
+        [dView dismissViewControllerAnimated:YES completion:nil];
+        dView = nil;
+    }else{
+        [fView stopCamera];
+        [fView dismissViewControllerAnimated:YES completion:nil];
+        fView = nil;
+    }
+
+}
 
 - (void)startCameraDocuments : (DocumentType) documentType {
     
     dView = [DocumentInsertView new];
     
     if(documentType == DocumentCNH) {
-        dView.type = 0;
-    }else if(documentType == DocumentRGFrente) {
-        dView.type = 1;
+        dView.type = CNH;
+    }else if(documentType == DocumentRGFrente || documentType == DocumentRG) {
+        dView.type = RG_FRENTE;
     }else{
-        dView.type = 2;
+        dView.type = RG_VERSO;
     }
     
     dView.cam = self;
@@ -66,12 +78,26 @@
     
 }
 
-- (void)onSuccesCapture: (NSString *)base64 {
+- (void)onSuccesCaptureFaceInsert: (NSString *)base64 {
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCapture:)]) {
-        [self.delegate onSuccessCapture:base64];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCaptureFaceInsert:)]) {
+        [self.delegate onSuccessCaptureFaceInsert:base64];
     }
     
+}
+
+- (void)onSuccessCaptureDocument: (NSString *)base64 {
+
+    if(dView.type == RG_FRENTE) {
+        [self stopCamera];
+        [self startCameraDocuments:DocumentRGVerso];
+    }else{
+        if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCaptureDocument:)]) {
+            [self.delegate onSuccessCaptureDocument:base64];
+        }
+    }
+    
+
 }
 
 - (BOOL)cameraBioShouldAutoCapture {
@@ -93,5 +119,6 @@
     return fView.isCountdown;
     
 }
+
 
 @end

@@ -24,9 +24,9 @@
     
     UIImageView *iv = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     
-    if(self.type == 0) {
+    if(self.type == 4) {
         [iv setImage:[UIImage imageNamed:@"frame_cnh"]];
-    }else if (self.type == 1) {
+    }else if (self.type == 501) {
         [iv setImage:[UIImage imageNamed:@"frame_rg_frente"]];
     }else{
         [iv setImage:[UIImage imageNamed:@"frame_rg_verso"]];
@@ -44,7 +44,7 @@
 }
 
 - (void)actionAfterTakePicture : (NSString *)base64 {
-    [self.cam onSuccesCapture:base64];
+    [self.cam onSuccessCaptureDocument:base64];
 }
 
 

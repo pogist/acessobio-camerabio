@@ -13,7 +13,9 @@
 
 
 typedef NS_ENUM(NSInteger, DocumentType) {
+    DocumentNone,
     DocumentCNH,
+    DocumentRG,
     DocumentRGFrente,
     DocumentRGVerso
 };
@@ -25,7 +27,8 @@ typedef NS_ENUM(NSInteger, DocumentType) {
 - (BOOL)cameraBioShouldCountdow;
 
 @required
-- (void)onSuccessCapture: (NSString *)base64;
+- (void)onSuccessCaptureFaceInsert: (NSString *)base64;
+- (void)onSuccessCaptureDocument: (NSString *)base64;
 
 @end
 
@@ -42,11 +45,12 @@ typedef NS_ENUM(NSInteger, DocumentType) {
 - (void)startCamera;
 - (void)startCamera: (BOOL)modeDebug;
 - (void)startCameraDocuments : (DocumentType) documentType;
-
 - (void)restartCamera;
+- (void)stopCamera;
+
 
 - (id)initWithViewController:(id)view;
-- (void)onSuccesCapture: (NSString *)base64;
+- (void)onSuccesCaptureFaceInsert: (NSString *)base64;
 
 @end
 

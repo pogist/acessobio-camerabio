@@ -346,7 +346,7 @@
 - (void)actionAfterTakePicture : (NSString *)base64 {
     
     if(self.cam != nil){
-        [self.cam onSuccesCapture:base64];
+        [self.cam onSuccesCaptureFaceInsert:base64];
     }
     
 }

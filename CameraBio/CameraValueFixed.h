@@ -30,5 +30,8 @@
 
 #define PLATAFORM = [[[UIDevice currentDevice] systemVersion] intValue];
 
+#define CNH  ((int)4)
+#define RG_FRENTE  ((int)501)
+#define RG_VERSO  ((int)502)
 
 #endif /* CameraValueFixed_h */

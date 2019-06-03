@@ -56,8 +56,8 @@
 		16B325D0228CB18300371FFB /* CameraBiometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraBiometry.h; sourceTree = "<group>"; };
 		16B325D1228CB18300371FFB /* CameraBiometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraBiometry.m; sourceTree = "<group>"; };
 		16B325D9228CB1DC00371FFB /* UIImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageUtils.m; sourceTree = "<group>"; };
-		16B325DA228CB1DC00371FFB /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
-		16B325DB228CB1DC00371FFB /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		16B325DA228CB1DC00371FFB /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Toast.m"; path = "Utils /UIView+Toast.m"; sourceTree = "<group>"; };
+		16B325DB228CB1DC00371FFB /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Utils /UIView+Toast.h"; sourceTree = "<group>"; };
 		16B325DC228CB1DC00371FFB /* UIImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageUtils.h; sourceTree = "<group>"; };
 		16F8D965229C655200DF6B4D /* CameraFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraFrame.m; sourceTree = "<group>"; };
 		16F8D966229C655200DF6B4D /* CameraMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraMain.h; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		16F8D969229C655200DF6B4D /* CameraDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraDebug.h; sourceTree = "<group>"; };
 		16F8D96A229C655200DF6B4D /* CameraDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraDebug.m; sourceTree = "<group>"; };
 		16F8D96E229C65DF00DF6B4D /* UIColorBio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIColorBio.h; sourceTree = "<group>"; };
-		16F8D96F229C65DF00DF6B4D /* UIColorBio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIColorBio.m; sourceTree = "<group>"; };
+		16F8D96F229C65DF00DF6B4D /* UIColorBio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UIColorBio.m; path = "Utils /UIColorBio.m"; sourceTree = "<group>"; };
 		16F8D971229C65F100DF6B4D /* CameraValueFixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraValueFixed.h; sourceTree = "<group>"; };
 		16F8D979229C74A600DF6B4D /* FaceInsertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceInsertView.h; sourceTree = "<group>"; };
 		16F8D97A229C74A600DF6B4D /* FaceInsertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceInsertView.m; sourceTree = "<group>"; };
@@ -112,7 +112,12 @@
 				16F8D97D229D72A900DF6B4D /* DocumentInsertView.m */,
 				16F8D979229C74A600DF6B4D /* FaceInsertView.h */,
 				16F8D97A229C74A600DF6B4D /* FaceInsertView.m */,
-				16B325D8228CB19D00371FFB /* Utils  */,
+				16F8D96E229C65DF00DF6B4D /* UIColorBio.h */,
+				16F8D96F229C65DF00DF6B4D /* UIColorBio.m */,
+				16B325DC228CB1DC00371FFB /* UIImageUtils.h */,
+				16B325D9228CB1DC00371FFB /* UIImageUtils.m */,
+				16B325DB228CB1DC00371FFB /* UIView+Toast.h */,
+				16B325DA228CB1DC00371FFB /* UIView+Toast.m */,
 				16B325D0228CB18300371FFB /* CameraBiometry.h */,
 				16B325D1228CB18300371FFB /* CameraBiometry.m */,
 				16B32523228B61E300371FFB /* CameraBio.h */,
@@ -126,19 +131,6 @@
 				16B32524228B61E300371FFB /* Info.plist */,
 			);
 			path = CameraBio;
-			sourceTree = "<group>";
-		};
-		16B325D8228CB19D00371FFB /* Utils  */ = {
-			isa = PBXGroup;
-			children = (
-				16F8D96E229C65DF00DF6B4D /* UIColorBio.h */,
-				16F8D96F229C65DF00DF6B4D /* UIColorBio.m */,
-				16B325DC228CB1DC00371FFB /* UIImageUtils.h */,
-				16B325D9228CB1DC00371FFB /* UIImageUtils.m */,
-				16B325DB228CB1DC00371FFB /* UIView+Toast.h */,
-				16B325DA228CB1DC00371FFB /* UIView+Toast.m */,
-			);
-			path = "Utils ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
