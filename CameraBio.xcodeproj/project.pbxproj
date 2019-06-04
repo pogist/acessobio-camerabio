@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16A9C80122A6ACB600C07B29 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A9C7FD22A6ACB600C07B29 /* UIView+Toast.m */; };
+		16A9C80222A6ACB600C07B29 /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A9C7FE22A6ACB600C07B29 /* UIView+Toast.h */; };
+		16A9C80322A6ACB600C07B29 /* UIColorBio.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A9C80022A6ACB600C07B29 /* UIColorBio.m */; };
 		16B32525228B61E300371FFB /* CameraBio.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B32523228B61E300371FFB /* CameraBio.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16B325D4228CB18300371FFB /* CameraBiometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325D0228CB18300371FFB /* CameraBiometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16B325D5228CB18400371FFB /* CameraBiometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B325D1228CB18300371FFB /* CameraBiometry.m */; };
 		16B325DD228CB1DC00371FFB /* UIImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B325D9228CB1DC00371FFB /* UIImageUtils.m */; };
-		16B325DE228CB1DC00371FFB /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B325DA228CB1DC00371FFB /* UIView+Toast.m */; };
-		16B325DF228CB1DC00371FFB /* UIView+Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325DB228CB1DC00371FFB /* UIView+Toast.h */; };
 		16B325E0228CB1DC00371FFB /* UIImageUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B325DC228CB1DC00371FFB /* UIImageUtils.h */; };
 		16E08EDD22A00B20008F735F /* frame_cnh.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16259BEB229DBDF5002072C6 /* frame_cnh.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		16E08EDE22A00B20008F735F /* frame_rg_frente.png in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16259BEA229DBDF5002072C6 /* frame_rg_frente.png */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -21,7 +22,6 @@
 		16F8D96B229C655300DF6B4D /* CameraFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D965229C655200DF6B4D /* CameraFrame.m */; };
 		16F8D96C229C655300DF6B4D /* CameraDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D96A229C655200DF6B4D /* CameraDebug.m */; };
 		16F8D96D229C655300DF6B4D /* CameraMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D967229C655200DF6B4D /* CameraMain.m */; };
-		16F8D970229C65DF00DF6B4D /* UIColorBio.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D96F229C65DF00DF6B4D /* UIColorBio.m */; };
 		16F8D972229C65F200DF6B4D /* CameraValueFixed.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F8D971229C65F100DF6B4D /* CameraValueFixed.h */; };
 		16F8D97B229C74A600DF6B4D /* FaceInsertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F8D979229C74A600DF6B4D /* FaceInsertView.h */; };
 		16F8D97C229C74A600DF6B4D /* FaceInsertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 16F8D97A229C74A600DF6B4D /* FaceInsertView.m */; };
@@ -50,14 +50,16 @@
 		16259BEA229DBDF5002072C6 /* frame_rg_frente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_rg_frente.png; sourceTree = "<group>"; };
 		16259BEB229DBDF5002072C6 /* frame_cnh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_cnh.png; sourceTree = "<group>"; };
 		16259BEC229DBDF5002072C6 /* frame_rg_verso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame_rg_verso.png; sourceTree = "<group>"; };
+		16A9C7FD22A6ACB600C07B29 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		16A9C7FE22A6ACB600C07B29 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		16A9C7FF22A6ACB600C07B29 /* DocumentInsertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocumentInsertView.xib; sourceTree = "<group>"; };
+		16A9C80022A6ACB600C07B29 /* UIColorBio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorBio.m; sourceTree = "<group>"; };
 		16B32520228B61E300371FFB /* CameraBio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CameraBio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B32523228B61E300371FFB /* CameraBio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraBio.h; sourceTree = "<group>"; };
 		16B32524228B61E300371FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B325D0228CB18300371FFB /* CameraBiometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraBiometry.h; sourceTree = "<group>"; };
 		16B325D1228CB18300371FFB /* CameraBiometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraBiometry.m; sourceTree = "<group>"; };
 		16B325D9228CB1DC00371FFB /* UIImageUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageUtils.m; sourceTree = "<group>"; };
-		16B325DA228CB1DC00371FFB /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Toast.m"; path = "Utils /UIView+Toast.m"; sourceTree = "<group>"; };
-		16B325DB228CB1DC00371FFB /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Toast.h"; path = "Utils /UIView+Toast.h"; sourceTree = "<group>"; };
 		16B325DC228CB1DC00371FFB /* UIImageUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageUtils.h; sourceTree = "<group>"; };
 		16F8D965229C655200DF6B4D /* CameraFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraFrame.m; sourceTree = "<group>"; };
 		16F8D966229C655200DF6B4D /* CameraMain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraMain.h; sourceTree = "<group>"; };
@@ -66,7 +68,6 @@
 		16F8D969229C655200DF6B4D /* CameraDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraDebug.h; sourceTree = "<group>"; };
 		16F8D96A229C655200DF6B4D /* CameraDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraDebug.m; sourceTree = "<group>"; };
 		16F8D96E229C65DF00DF6B4D /* UIColorBio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIColorBio.h; sourceTree = "<group>"; };
-		16F8D96F229C65DF00DF6B4D /* UIColorBio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UIColorBio.m; path = "Utils /UIColorBio.m"; sourceTree = "<group>"; };
 		16F8D971229C65F100DF6B4D /* CameraValueFixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraValueFixed.h; sourceTree = "<group>"; };
 		16F8D979229C74A600DF6B4D /* FaceInsertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceInsertView.h; sourceTree = "<group>"; };
 		16F8D97A229C74A600DF6B4D /* FaceInsertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceInsertView.m; sourceTree = "<group>"; };
@@ -104,6 +105,10 @@
 		16B32522228B61E300371FFB /* CameraBio */ = {
 			isa = PBXGroup;
 			children = (
+				16A9C7FF22A6ACB600C07B29 /* DocumentInsertView.xib */,
+				16A9C80022A6ACB600C07B29 /* UIColorBio.m */,
+				16A9C7FE22A6ACB600C07B29 /* UIView+Toast.h */,
+				16A9C7FD22A6ACB600C07B29 /* UIView+Toast.m */,
 				16259BEB229DBDF5002072C6 /* frame_cnh.png */,
 				16259BEA229DBDF5002072C6 /* frame_rg_frente.png */,
 				16259BEC229DBDF5002072C6 /* frame_rg_verso.png */,
@@ -113,11 +118,8 @@
 				16F8D979229C74A600DF6B4D /* FaceInsertView.h */,
 				16F8D97A229C74A600DF6B4D /* FaceInsertView.m */,
 				16F8D96E229C65DF00DF6B4D /* UIColorBio.h */,
-				16F8D96F229C65DF00DF6B4D /* UIColorBio.m */,
 				16B325DC228CB1DC00371FFB /* UIImageUtils.h */,
 				16B325D9228CB1DC00371FFB /* UIImageUtils.m */,
-				16B325DB228CB1DC00371FFB /* UIView+Toast.h */,
-				16B325DA228CB1DC00371FFB /* UIView+Toast.m */,
 				16B325D0228CB18300371FFB /* CameraBiometry.h */,
 				16B325D1228CB18300371FFB /* CameraBiometry.m */,
 				16B32523228B61E300371FFB /* CameraBio.h */,
@@ -143,10 +145,10 @@
 				16B325D4228CB18300371FFB /* CameraBiometry.h in Headers */,
 				16F8D97B229C74A600DF6B4D /* FaceInsertView.h in Headers */,
 				16B32525228B61E300371FFB /* CameraBio.h in Headers */,
+				16A9C80222A6ACB600C07B29 /* UIView+Toast.h in Headers */,
 				16B325E0228CB1DC00371FFB /* UIImageUtils.h in Headers */,
 				16F8D972229C65F200DF6B4D /* CameraValueFixed.h in Headers */,
 				16F8D980229D72AA00DF6B4D /* DocumentInsertView.h in Headers */,
-				16B325DF228CB1DC00371FFB /* UIView+Toast.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,11 +212,11 @@
 				16F8D96B229C655300DF6B4D /* CameraFrame.m in Sources */,
 				16F8D96D229C655300DF6B4D /* CameraMain.m in Sources */,
 				16F8D97C229C74A600DF6B4D /* FaceInsertView.m in Sources */,
-				16B325DE228CB1DC00371FFB /* UIView+Toast.m in Sources */,
 				16B325D5228CB18400371FFB /* CameraBiometry.m in Sources */,
 				16F8D96C229C655300DF6B4D /* CameraDebug.m in Sources */,
 				16F8D97F229D72A900DF6B4D /* DocumentInsertView.m in Sources */,
-				16F8D970229C65DF00DF6B4D /* UIColorBio.m in Sources */,
+				16A9C80322A6ACB600C07B29 /* UIColorBio.m in Sources */,
+				16A9C80122A6ACB600C07B29 /* UIView+Toast.m in Sources */,
 				16B325DD228CB1DC00371FFB /* UIImageUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
