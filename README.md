@@ -13,6 +13,14 @@ Estas instruções farão com que você consiga implementar a câmera com engenh
 
 Siga a documentação [cocoapods](https://cocoapods.org/) para instalar o gerenciador em sua maquina caso ainda a possua. 
 
+
+Caso ainda não possua as permissões para o uso de câmera em seu projeto, nao esqueça de adicionar antes de compilar o sua aplicação. Segue o exemplo: 
+
+```
+<key>NSCameraUsageDescription</key>
+<string>Camera usage description</string>
+```
+
 ### Instalando
 
 Recomendamos o uso do cocoapods para o desenvolvimento da aplicação. 
