@@ -71,15 +71,6 @@ Para obter a imagem em base64:
 ```
 - (void)onSuccesCapture: (NSString*)base64;
 ```
-
-### Outros métodos uteis
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Construido com
 
 * [MLKit](https://firebase.google.com/docs/ml-kit/?hl=pt-br) - Framework Google para reconhecimento facial
