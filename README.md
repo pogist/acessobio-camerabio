@@ -74,7 +74,7 @@ CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];
 [cameraBio startCamera];
 ```
 
-Para obter a imagem em base64:
+- Implemente no mesmo arquivo o método abaixo para obter a imagem em base64:
 
 ```
 - (void)onSuccesCapture: (NSString*)base64;
