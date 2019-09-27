@@ -28,8 +28,10 @@
         [iv setImage:[UIImage imageNamed:@"frame_cnh"]];
     }else if (self.type == 501) {
         [iv setImage:[UIImage imageNamed:@"frame_rg_frente"]];
-    }else{
+    }else if (self.type == 502){
         [iv setImage:[UIImage imageNamed:@"frame_rg_verso"]];
+    }else{
+        [iv setHidden:YES];
     }
     
     [self.view addSubview:iv];

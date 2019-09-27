@@ -34,6 +34,7 @@
     [fView setIsDebug:modeDebug];
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:fView];
     [nav setNavigationBarHidden:YES animated:NO];
+    [nav setModalPresentationStyle:UIModalPresentationFullScreen];
     [viewController presentViewController:nav animated:YES completion:nil];
     
 }
@@ -47,6 +48,7 @@
 }
 
 - (void)stopCamera {
+
     if(fView == nil) {
         [dView stopCamera];
         [dView dismissViewControllerAnimated:YES completion:nil];
@@ -74,6 +76,7 @@
     dView.cam = self;
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:dView];
     [nav setNavigationBarHidden:YES animated:NO];
+    [nav setModalPresentationStyle:UIModalPresentationFullScreen];
     [viewController presentViewController:nav animated:YES completion:nil];
     
 }
