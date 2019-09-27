@@ -79,6 +79,35 @@ CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];
 ```
 - (void)onSuccesCapture: (NSString*)base64;
 ```
+
+
+## Outros métodos
+
+
+Caso precise abrir a câmera voltada para a captura de documentos, basta apenas adicionar o seguinte código abaixo:  
+
+```
+CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];     
+[cameraBio setDelegate:self];
+[cameraBio startCameraDocuments:DocumentRG];
+```
+
+- Implemente no mesmo arquivo o método abaixo para obter a imagem do documento em base64:
+
+```
+- (void)onSuccesCaptureDocument: (NSString*)base64;
+```
+
+Temos 3 opcões de mascara: 
+
+ -  DocumentRG,
+ -  DocumentRGFrente,
+ -  DocumentRGVerso 
+ 
+ Caso deseje apenas abrir a camera para capturar documento sem nenhuma mascara acima, escolha a opcao: 
+ -  DocumentNone
+
+
 ## Construido com
 
 * [MLKit](https://firebase.google.com/docs/ml-kit/?hl=pt-br) - Framework Google para reconhecimento facial
