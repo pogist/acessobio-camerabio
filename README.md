@@ -13,6 +13,14 @@ Estas instruções farão com que você consiga implementar a câmera com engenh
 
 Siga a documentação [cocoapods](https://cocoapods.org/) para instalar o gerenciador em sua maquina caso ainda a possua. 
 
+
+Caso ainda não possua as permissões para o uso de câmera em seu projeto, nao esqueça de adicionar antes de compilar o sua aplicação. Segue o exemplo: 
+
+```
+<key>NSCameraUsageDescription</key>
+<string>Camera usage description</string>
+```
+
 ### Instalando
 
 Recomendamos o uso do cocoapods para o desenvolvimento da aplicação. 
@@ -33,7 +41,7 @@ pod init
 
 - Abra o mesmo e adicione:
 ```
-pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’, :tag => ‘0.0.3’
+pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’, :tag => ‘1.0.2’
 ```
 ![](https://media.giphy.com/media/eK6aukS7LdEOv0NFgC/giphy.gif)
 
@@ -71,15 +79,6 @@ Para obter a imagem em base64:
 ```
 - (void)onSuccesCapture: (NSString*)base64;
 ```
-
-### Outros métodos uteis
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Construido com
 
 * [MLKit](https://firebase.google.com/docs/ml-kit/?hl=pt-br) - Framework Google para reconhecimento facial
