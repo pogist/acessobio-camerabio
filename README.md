@@ -66,7 +66,7 @@ Importar, abrir a câmera e receber os callbacks básicos é muito simples, siga
 
 - Abra o seu arquivo *.h* que deseja abrir a camera de captura e importe importe e implemente nossa classe: 
 
-```
+```objc
 #import <CameraBio/CameraBiometry.h>
 
 @interface ViewController : UIViewController <CameraBioDelegate>
@@ -74,7 +74,7 @@ Importar, abrir a câmera e receber os callbacks básicos é muito simples, siga
 
 - No arquivo *.m* instancie e chame a abertura de câmera:
 
-```
+```objc
 CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];     
 [cameraBio setDelegate:self];
 [cameraBio startCamera];
@@ -82,7 +82,7 @@ CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];
 
 - Implemente no mesmo arquivo o método abaixo para obter a imagem em base64:
 
-```
+```objc
 - (void)onSuccesCapture: (NSString*)base64;
 ```
 
@@ -92,7 +92,7 @@ CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];
 
 Caso precise abrir a câmera voltada para a captura de documentos, basta apenas adicionar o seguinte código abaixo:  
 
-```
+```objc
 CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];     
 [cameraBio setDelegate:self];
 [cameraBio startCameraDocuments:DocumentRG];
@@ -100,7 +100,7 @@ CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];
 
 - Implemente no mesmo arquivo o método abaixo para obter a imagem do documento em base64:
 
-```
+```objc
 - (void)onSuccesCaptureDocument: (NSString*)base64;
 ```
 
