@@ -7,8 +7,7 @@
 //
 
 #import "CameraMain.h"
-#import "UIColorBio.h"
-#import "CameraMain.h"
+
 
 @interface CameraMain ()
 
