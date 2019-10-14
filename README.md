@@ -41,8 +41,9 @@ pod init
 
 - Abra o mesmo e adicione:
 ```
-pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’, :tag => ‘1.0.0’
+pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’
 ```
+
 ![](https://media.giphy.com/media/eK6aukS7LdEOv0NFgC/giphy.gif)
 
 Em seguida, volte ao terminal e adicione a seguinte linha: 
