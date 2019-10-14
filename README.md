@@ -43,6 +43,11 @@ pod init
 ```
 pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’
 ```
+ou 
+```
+pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’, :tag => ‘1.0.5’
+```
+última versão estável.
 
 ![](https://media.giphy.com/media/eK6aukS7LdEOv0NFgC/giphy.gif)
 
