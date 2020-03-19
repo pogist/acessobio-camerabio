@@ -45,7 +45,7 @@ pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio
 ```
 ou 
 ```
-pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’, :tag => ‘1.0.7’
+pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’, :tag => ‘1.0.9’
 ```
 última versão estável.
 
