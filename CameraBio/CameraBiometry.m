@@ -92,8 +92,14 @@
 - (void)onSuccessCaptureDocument: (NSString *)base64 {
 
     if(dView.type == RG_FRENTE) {
+        
+        if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCaptureDocument:)]) {
+                  [self.delegate onSuccessCaptureDocument:base64];
+        }
+        
         [self stopCamera];
         [self startCameraDocuments:DocumentRGVerso];
+    
     }else{
         if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCaptureDocument:)]) {
             [self.delegate onSuccessCaptureDocument:base64];
