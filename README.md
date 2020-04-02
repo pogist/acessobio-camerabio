@@ -45,7 +45,7 @@ pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio
 ```
 ou 
 ```
-pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’, :tag => ‘1.0.7’
+pod ‘CameraBio’, :git => ‘https://github.com/acesso-io/acessobio-camerabio’, :tag => ‘1.0.9’
 ```
 última versão estável.
 
@@ -103,7 +103,7 @@ CameraBio *cameraBio = [[CameraBio alloc]initWithViewController:self];
 ```objc
 - (void)onSuccesCaptureDocument: (NSString*)base64;
 ```
-
+ 
 Temos 3 opcões de mascara: 
 
  -  DocumentRG,
@@ -113,6 +113,7 @@ Temos 3 opcões de mascara:
  Caso deseje apenas abrir a camera para capturar documento sem nenhuma mascara acima, escolha a opcao: 
  -  DocumentNone
 
+**Atenção:** _Em casos o qual o tipo de documento for DocumentRG, o método de retorno ```onSuccesCaptureDocument:``` será delegado duas vezes. A primeira para o retorno do base64 do DocumentRGFrente e a segunda para o retorno do DocumentRGVerso._ 
 
 ## Tamanho 
 
