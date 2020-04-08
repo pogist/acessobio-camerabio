@@ -124,7 +124,7 @@ A SDK em si possui 184kb, porém, faz uso de ferramentas do Firebase a qual não
 
 ## Construido com
 
-* [MLKit](https://firebase.google.com/docs/ml-kit/?hl=pt-br) - Framework Google para reconhecimento facial
+* [Firebase MLKit](https://firebase.google.com/docs/ml-kit/?hl=pt-br) - Framework Google para reconhecimento facial
 
 
 ## Versionamento
