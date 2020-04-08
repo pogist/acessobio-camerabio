@@ -21,6 +21,9 @@ Caso ainda não possua as permissões para o uso de câmera em seu projeto, nao 
 <string>Camera usage description</string>
 ```
 
+#### Crie o seu projeto no Firebase
+- A nossa SDK conta com soluções provenientes do MLKit da Google, se fazendo necessário criar adequadamento o projeto no [Firebase  Console](https://console.firebase.google.com) seguindo todas as instruções para gerar o arquivo googleservices.json ao seu projeto no Android Studio.  
+
 ### Instalando
 
 Recomendamos o uso do cocoapods para o desenvolvimento da aplicação. 
