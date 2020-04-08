@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CameraBio"
-  spec.version      = "1.0.9"
+  spec.version      = "1.1.0"
   spec.summary      = "A short description of CameraBio."
 
   # This description is used to generate tags and improve search results.
@@ -78,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/acesso-io/acessobio-camerabio.git", :tag => "1.0.9" }
+  spec.source       = { :git => "https://github.com/acesso-io/acessobio-camerabio.git", :tag => "1.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -120,7 +120,7 @@ Pod::Spec.new do |spec|
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
 
-    spec.dependency "GoogleMobileVision/FaceDetector"
+    spec.dependency "Firebase/MLVisionFaceModel"
 
     spec.static_framework = true
 
