@@ -18,7 +18,7 @@
 //@import Firebase;
 
 //#import <Firebase/Firebase.h>
-@class FirebaseMLVision;
+@import FirebaseMLVision;
 
 #define NAME_APPLICATION [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
 
