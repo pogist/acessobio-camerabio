@@ -274,7 +274,7 @@ cameraPosition:(AVCaptureDevicePosition)cameraPosition {
                         hasError = YES;
                         // [self showRed];
                         self->countTimeAlert ++;
-                        [strError appendString:@"Center your face"];
+                        [strError appendString:@"Centralize o seu rosto na tela"];
                         
                     }
                     
@@ -292,7 +292,7 @@ cameraPosition:(AVCaptureDevicePosition)cameraPosition {
                         hasError = YES;
                         // [self showRed];
                         self->countTimeAlert ++;
-                        [strError appendString:@"Center your face"];
+                        [strError appendString:@"Centralize o seu rosto na tela"];
                     }
                     
                 }else{
@@ -307,7 +307,7 @@ cameraPosition:(AVCaptureDevicePosition)cameraPosition {
                         hasError = YES;
                         // [self showRed];
                         self->countTimeAlert ++;
-                        [strError appendString:@"Center your face"];
+                        [strError appendString:@"Centralize o seu rosto na tela"];
                     }
                     
                 }
@@ -323,9 +323,9 @@ cameraPosition:(AVCaptureDevicePosition)cameraPosition {
                     self->countTimeAlert ++;
                     // [self showRed];
                     if(hasError){
-                        [strError appendString:@" / Put your face away"];
+                        [strError appendString:@" / Afaste um pouco seu rosto da tela"];
                     }else{
-                        [strError appendString:@"Put your face away"];
+                        [strError appendString:@"Afaste um pouco seu rosto da tela"];
                     }
                     hasError = YES;
                     
@@ -333,18 +333,18 @@ cameraPosition:(AVCaptureDevicePosition)cameraPosition {
                     self->countTimeAlert ++;
                     // [self showRed];
                     if(hasError){
-                        [strError appendString:@" / Bring the face closer"];
+                        [strError appendString:@" / Aproxime seu rosto da tela"];
                     }else{
-                        [strError appendString:@"Bring the face closer"];
+                        [strError appendString:@"Aproxime seu rosto da tela"];
                     }
                     hasError = YES;
                     
                 }else if((fabs(Y_LEFT_EYE_POINT - Y_RIGHT_EYE_POINT) > 20) || (fabs(Y_RIGHT_EYE_POINT - Y_LEFT_EYE_POINT) > 20)){
                     self->countTimeAlert ++;
                     if(hasError){
-                        [strError appendString:@" / Inclined face"];
+                        [strError appendString:@" / Deixe seu rosto reto na tela"];
                     }else{
-                        [strError appendString:@"Inclined face"];
+                        [strError appendString:@"Deixe seu rosto reto na tela"];
                     }
                     hasError = YES;
                     
@@ -359,15 +359,15 @@ cameraPosition:(AVCaptureDevicePosition)cameraPosition {
                     //[self showRed];
                     if(hasError){
                         if(ANGLE_HORIZONTAL > 20) {
-                            [strError appendString:@" / Turn slightly left"];
+                            [strError appendString:@" / Gire seu rosto um pouco para a esquerda"];
                         }else if(ANGLE_HORIZONTAL < -20){
-                            [strError appendString:@" / Turn slightly right"];
+                            [strError appendString:@" / Gire seu rosto um pouco para a direita"];
                         }
                     }else{
                         if(ANGLE_HORIZONTAL > 20) {
-                            [strError appendString:@"Turn slightly left"];
+                            [strError appendString:@"Gire seu rosto um pouco para a esquerda"];
                         }else if(ANGLE_HORIZONTAL < -20){
-                            [strError appendString:@"Turn slightly right"];
+                            [strError appendString:@"Gire seu rosto um pouco para a direita"];
                         }
                     }
                     hasError = YES;
