@@ -1,0 +1,5 @@
+platform :ios, '10.3'
+
+target 'CameraBioExample' do
+  pod 'CameraBio', :path => '../'
+end

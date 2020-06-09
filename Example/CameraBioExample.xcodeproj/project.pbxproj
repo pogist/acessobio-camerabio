@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C8228262490518400E359A9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C8228252490518400E359A9 /* GoogleService-Info.plist */; };
 		4CFBBE4124904A43008489DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBBE4024904A43008489DF /* AppDelegate.m */; };
 		4CFBBE4724904A43008489DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBBE4624904A43008489DF /* ViewController.m */; };
 		4CFBBE4A24904A43008489DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CFBBE4824904A43008489DF /* Main.storyboard */; };
 		4CFBBE4C24904A44008489DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFBBE4B24904A44008489DF /* Assets.xcassets */; };
 		4CFBBE4F24904A44008489DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CFBBE4D24904A44008489DF /* LaunchScreen.storyboard */; };
 		4CFBBE5224904A44008489DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBBE5124904A44008489DF /* main.m */; };
+		DF39A808B909310E6C4BE8FB /* libPods-CameraBioExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D476E582B8E0A40D90C77E7C /* libPods-CameraBioExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C8228252490518400E359A9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4CFBBE3C24904A43008489DF /* CameraBioExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraBioExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFBBE3F24904A43008489DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CFBBE4024904A43008489DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,9 @@
 		4CFBBE4E24904A44008489DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CFBBE5024904A44008489DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CFBBE5124904A44008489DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E47C500EB317A0B644659B8 /* Pods-CameraBioExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraBioExample.release.xcconfig"; path = "Target Support Files/Pods-CameraBioExample/Pods-CameraBioExample.release.xcconfig"; sourceTree = "<group>"; };
+		C56DE828E3521C28F1D8BF56 /* Pods-CameraBioExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraBioExample.debug.xcconfig"; path = "Target Support Files/Pods-CameraBioExample/Pods-CameraBioExample.debug.xcconfig"; sourceTree = "<group>"; };
+		D476E582B8E0A40D90C77E7C /* libPods-CameraBioExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CameraBioExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF39A808B909310E6C4BE8FB /* libPods-CameraBioExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				4CFBBE3E24904A43008489DF /* CameraBioExample */,
 				4CFBBE3D24904A43008489DF /* Products */,
+				97C1361F26975E2F6CCB3A9E /* Pods */,
+				69A8A66684723F610D7679E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +67,7 @@
 		4CFBBE3E24904A43008489DF /* CameraBioExample */ = {
 			isa = PBXGroup;
 			children = (
+				4C8228252490518400E359A9 /* GoogleService-Info.plist */,
 				4CFBBE3F24904A43008489DF /* AppDelegate.h */,
 				4CFBBE4024904A43008489DF /* AppDelegate.m */,
 				4CFBBE4524904A43008489DF /* ViewController.h */,
@@ -71,6 +81,23 @@
 			path = CameraBioExample;
 			sourceTree = "<group>";
 		};
+		69A8A66684723F610D7679E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D476E582B8E0A40D90C77E7C /* libPods-CameraBioExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97C1361F26975E2F6CCB3A9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C56DE828E3521C28F1D8BF56 /* Pods-CameraBioExample.debug.xcconfig */,
+				5E47C500EB317A0B644659B8 /* Pods-CameraBioExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CFBBE5524904A44008489DF /* Build configuration list for PBXNativeTarget "CameraBioExample" */;
 			buildPhases = (
+				92C141840AB274FDD632898B /* [CP] Check Pods Manifest.lock */,
 				4CFBBE3824904A43008489DF /* Sources */,
 				4CFBBE3924904A43008489DF /* Frameworks */,
 				4CFBBE3A24904A43008489DF /* Resources */,
+				EC3F03AF3FBA652419F4400F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,12 +158,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CFBBE4F24904A44008489DF /* LaunchScreen.storyboard in Resources */,
+				4C8228262490518400E359A9 /* GoogleService-Info.plist in Resources */,
 				4CFBBE4C24904A44008489DF /* Assets.xcassets in Resources */,
 				4CFBBE4A24904A43008489DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92C141840AB274FDD632898B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CameraBioExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC3F03AF3FBA652419F4400F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CameraBioExample/Pods-CameraBioExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CameraBioExample/Pods-CameraBioExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CameraBioExample/Pods-CameraBioExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CFBBE3824904A43008489DF /* Sources */ = {
@@ -281,6 +353,7 @@
 		};
 		4CFBBE5624904A44008489DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C56DE828E3521C28F1D8BF56 /* Pods-CameraBioExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +372,7 @@
 		};
 		4CFBBE5724904A44008489DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E47C500EB317A0B644659B8 /* Pods-CameraBioExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
