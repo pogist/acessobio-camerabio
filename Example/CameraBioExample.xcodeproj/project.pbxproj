@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4CFBBE4124904A43008489DF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBBE4024904A43008489DF /* AppDelegate.m */; };
-		4CFBBE4424904A43008489DF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBBE4324904A43008489DF /* SceneDelegate.m */; };
 		4CFBBE4724904A43008489DF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBBE4624904A43008489DF /* ViewController.m */; };
 		4CFBBE4A24904A43008489DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CFBBE4824904A43008489DF /* Main.storyboard */; };
 		4CFBBE4C24904A44008489DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFBBE4B24904A44008489DF /* Assets.xcassets */; };
@@ -20,8 +19,6 @@
 		4CFBBE3C24904A43008489DF /* CameraBioExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraBioExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFBBE3F24904A43008489DF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CFBBE4024904A43008489DF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4CFBBE4224904A43008489DF /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		4CFBBE4324904A43008489DF /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		4CFBBE4524904A43008489DF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4CFBBE4624904A43008489DF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4CFBBE4924904A43008489DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,8 +60,6 @@
 			children = (
 				4CFBBE3F24904A43008489DF /* AppDelegate.h */,
 				4CFBBE4024904A43008489DF /* AppDelegate.m */,
-				4CFBBE4224904A43008489DF /* SceneDelegate.h */,
-				4CFBBE4324904A43008489DF /* SceneDelegate.m */,
 				4CFBBE4524904A43008489DF /* ViewController.h */,
 				4CFBBE4624904A43008489DF /* ViewController.m */,
 				4CFBBE4824904A43008489DF /* Main.storyboard */,
@@ -149,7 +144,6 @@
 				4CFBBE4724904A43008489DF /* ViewController.m in Sources */,
 				4CFBBE4124904A43008489DF /* AppDelegate.m in Sources */,
 				4CFBBE5224904A44008489DF /* main.m in Sources */,
-				4CFBBE4424904A43008489DF /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,13 +286,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 423Q26AEEM;
 				INFOPLIST_FILE = CameraBioExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.pogist.CameraBioExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,13 +304,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 423Q26AEEM;
 				INFOPLIST_FILE = CameraBioExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.pogist.CameraBioExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
