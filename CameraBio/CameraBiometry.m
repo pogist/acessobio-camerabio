@@ -90,8 +90,19 @@
 }
 
 - (void)onSuccessCaptureDocument: (NSString *)base64 {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCaptureDocument:)]) {
-        [self.delegate onSuccessCaptureDocument:base64];
+    if (self.delegate == nil) {
+        return;
+    }
+
+    BOOL hasOnSuccessCaptureDocumentBack = [self.delegate respondsToSelector:@selector(onSuccessCaptureDocumentBack:)];
+    BOOL hasOnSuccessCaptureDocumentFront = [self.delegate respondsToSelector:@selector(onSuccessCaptureDocumentFront:)];
+
+    if (dView.type == RG_VERSO) {
+        if (hasOnSuccessCaptureDocumentBack) {
+            [self.delegate onSuccessCaptureDocumentBack:base64];
+        }
+    } else if (hasOnSuccessCaptureDocumentFront) {
+        [self.delegate onSuccessCaptureDocumentFront:base64];
     }
 }
 
