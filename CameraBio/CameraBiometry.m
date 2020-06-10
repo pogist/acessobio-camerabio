@@ -69,8 +69,10 @@
         dView.type = CNH;
     }else if(documentType == DocumentRGFrente || documentType == DocumentRG) {
         dView.type = RG_FRENTE;
-    }else{
+    }else if (documentType == DocumentRGVerso) {
         dView.type = RG_VERSO;
+    } else {
+        dView.type = NONE;
     }
     
     dView.cam = self;

@@ -33,5 +33,6 @@
 #define CNH  ((int)4)
 #define RG_FRENTE  ((int)501)
 #define RG_VERSO  ((int)502)
+#define NONE ((int)0)
 
 #endif /* CameraValueFixed_h */

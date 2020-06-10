@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="47Z-ku-Hgg">
-                                <rect key="frame" x="162" y="291" width="90" height="314"/>
+                                <rect key="frame" x="162" y="274.5" width="90" height="347"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TdA-Rl-WoE">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="160"/>
@@ -27,7 +27,7 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Cza-wn-Qdp">
-                                        <rect key="frame" x="0.0" y="185" width="90" height="129"/>
+                                        <rect key="frame" x="0.0" y="185" width="90" height="162"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEg-85-mVl">
                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
@@ -67,6 +67,16 @@
                                                 <state key="normal" title="RG Front"/>
                                                 <connections>
                                                     <action selector="onPressRGFront:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SMs-wl-zDO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqc-aw-Mav">
+                                                <rect key="frame" x="0.0" y="132" width="90" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="fh4-aW-rn7"/>
+                                                </constraints>
+                                                <state key="normal" title="No Mask"/>
+                                                <connections>
+                                                    <action selector="onPressNoMask:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4k-nZ-Y3S"/>
                                                 </connections>
                                             </button>
                                         </subviews>

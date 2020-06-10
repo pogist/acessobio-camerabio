@@ -54,6 +54,11 @@
   [self.cameraBio startCameraDocuments:DocumentRGVerso];
 }
 
+- (IBAction)onPressNoMask:(id)sender
+{
+  [self.cameraBio startCameraDocuments:DocumentNone];
+}
+
 - (void)onSuccessCaptureFaceInsert:(NSString *)base64
 {
   [self setPreviewImageFromBase64:base64];
