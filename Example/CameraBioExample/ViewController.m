@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *previewImageView;
+
 @end
 
 @implementation ViewController
@@ -18,6 +20,26 @@
 {
   [super viewDidLoad];
   // Do any additional setup after loading the view.
+}
+
+- (IBAction)onPressFace:(id)sender
+{
+
+}
+
+- (IBAction)onPressCNH:(id)sender
+{
+
+}
+
+- (IBAction)onPressRGFront:(id)sender
+{
+
+}
+
+- (IBAction)onPressRGBack:(id)sender
+{
+
 }
 
 @end
