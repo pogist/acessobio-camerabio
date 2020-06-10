@@ -19,27 +19,57 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  // Do any additional setup after loading the view.
+  self.cameraBio = [[CameraBio alloc] initWithViewController:self];
+  self.cameraBio.delegate = self;
+}
+
+- (void) setPreviewImageFromBase64:(NSString *)base64
+{
+  NSData *imageData = [[NSData alloc] initWithBase64EncodedString:base64 options:NSDataBase64DecodingIgnoreUnknownCharacters];;
+  self.previewImageView.image = [[UIImage alloc] initWithData:imageData];
+}
+
+- (void) dismissCamera
+{
+  [self.cameraBio stopCamera];
 }
 
 - (IBAction)onPressFace:(id)sender
 {
-
+  [self.cameraBio startCamera];
 }
 
 - (IBAction)onPressCNH:(id)sender
 {
-
+  [self.cameraBio startCameraDocuments:DocumentCNH];
 }
 
 - (IBAction)onPressRGFront:(id)sender
 {
-
+  [self.cameraBio startCameraDocuments:DocumentRGFrente];
 }
 
 - (IBAction)onPressRGBack:(id)sender
 {
+  [self.cameraBio startCameraDocuments:DocumentRGVerso];
+}
 
+- (void)onSuccessCaptureFaceInsert:(NSString *)base64
+{
+  [self setPreviewImageFromBase64:base64];
+  [self dismissCamera];
+}
+
+- (void)onSuccessCaptureDocumentBack:(NSString *)base64
+{
+  [self setPreviewImageFromBase64:base64];
+  [self dismissCamera];
+}
+
+- (void)onSuccessCaptureDocumentFront:(NSString *)base64
+{
+  [self setPreviewImageFromBase64:base64];
+  [self dismissCamera];
 }
 
 @end

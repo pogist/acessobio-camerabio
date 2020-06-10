@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CameraBio/CameraBio.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CameraBioDelegate>
+
+@property (strong, nonatomic, nullable) CameraBio *cameraBio;
 
 @end
