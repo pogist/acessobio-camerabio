@@ -89,19 +89,14 @@
     
 }
 
-- (void)onSuccessCaptureDocument: (NSString *)base64 {
-    if (self.delegate == nil) {
-        return;
+- (void)onSuccessCaptureDocumentBack:(NSString *)base64 {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCaptureDocumentBack:)]) {
+        [self.delegate onSuccessCaptureDocumentBack:base64];
     }
+}
 
-    BOOL hasOnSuccessCaptureDocumentBack = [self.delegate respondsToSelector:@selector(onSuccessCaptureDocumentBack:)];
-    BOOL hasOnSuccessCaptureDocumentFront = [self.delegate respondsToSelector:@selector(onSuccessCaptureDocumentFront:)];
-
-    if (dView.type == RG_VERSO) {
-        if (hasOnSuccessCaptureDocumentBack) {
-            [self.delegate onSuccessCaptureDocumentBack:base64];
-        }
-    } else if (hasOnSuccessCaptureDocumentFront) {
+- (void)onSuccessCaptureDocumentFront:(NSString *)base64 {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCaptureDocumentFront:)]) {
         [self.delegate onSuccessCaptureDocumentFront:base64];
     }
 }
@@ -125,6 +120,5 @@
     return fView.isCountdown;
     
 }
-
 
 @end
