@@ -65,13 +65,7 @@
   [self dismissCamera];
 }
 
-- (void)onSuccessCaptureDocumentBack:(NSString *)base64
-{
-  [self setPreviewImageFromBase64:base64];
-  [self dismissCamera];
-}
-
-- (void)onSuccessCaptureDocumentFront:(NSString *)base64
+- (void)onSuccessCaptureDocument:(NSString *)base64
 {
   [self setPreviewImageFromBase64:base64];
   [self dismissCamera];

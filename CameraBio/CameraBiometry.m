@@ -91,15 +91,9 @@
     
 }
 
-- (void)onSuccessCaptureDocumentBack:(NSString *)base64 {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCaptureDocumentBack:)]) {
-        [self.delegate onSuccessCaptureDocumentBack:base64];
-    }
-}
-
-- (void)onSuccessCaptureDocumentFront:(NSString *)base64 {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCaptureDocumentFront:)]) {
-        [self.delegate onSuccessCaptureDocumentFront:base64];
+- (void)onSuccessCaptureDocument:(NSString *)base64 {
+    if (self.delegate && [self.delegate respondsToSelector:@selector(onSuccessCaptureDocument:)]) {
+        [self.delegate onSuccessCaptureDocument:base64];
     }
 }
 

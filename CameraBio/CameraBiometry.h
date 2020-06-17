@@ -27,9 +27,8 @@ typedef NS_ENUM(NSInteger, DocumentType) {
 - (BOOL)cameraBioShouldCountdow;
 
 @required
-- (void)onSuccessCaptureFaceInsert: (NSString *)base64;
-- (void)onSuccessCaptureDocumentBack: (NSString *)base64;
-- (void)onSuccessCaptureDocumentFront:(NSString *)base64;
+- (void)onSuccessCaptureDocument:(NSString *)base64;
+- (void)onSuccessCaptureFaceInsert:(NSString *)base64;
 
 @end
 

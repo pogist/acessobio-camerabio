@@ -46,11 +46,7 @@
 }
 
 - (void)actionAfterTakePicture : (NSString *)base64 {
-    if (self.type == RG_VERSO) {
-        [self.cam onSuccessCaptureDocumentBack:base64];
-    } else {
-        [self.cam onSuccessCaptureDocumentFront:base64];
-    }
+    [self.cam onSuccessCaptureDocument:base64];
 }
 
 
